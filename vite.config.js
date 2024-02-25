@@ -9,13 +9,22 @@ export default defineConfig({
     monkey({
       entry: 'src/main.jsx',
       userscript: {
-        icon: 'https://vitejs.dev/logo.svg',
-        namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.github.com/*'],
+        name:'github代码快速跳转网页查看',
+        author:'superBiuBiu',
+        version:'1.0.1',
+        iconURL:'https://www.google.com/s2/favicons?domain=dreamlove.top',
+        namespace: 'dreamlove/see-fast',
+        supportURL:'https://github.com/superBiuBiuMan/see-fast',
+        match: ['https://github.com/*'],
+        '@run-at':'document-end'
       },
       build: {
-        externalGlobals: {
-          preact: cdn.jsdelivr('preact', 'dist/preact.min.js'),
+        externalGlobals:[
+          ['preact',cdn.jsdelivr('preact', 'dist/preact.min.js'),],
+          ['tdesign-react',cdn.jsdelivr('tdesignReact','dist/tdesign.min.js')]
+        ],
+        externalResource: {
+          'tdesign-react/es/style/index.css': "https://cdn.jsdelivr.net/npm/tdesign-react@1.5.1/dist/tdesign.min.css",
         },
       },
     }),

@@ -1,15 +1,14 @@
 import { render } from 'preact';
 import { App } from './app';
-import './index.css';
-
-
+import "tdesign-react/es/style/index.css";
+/*import "reset-css";*/
 render(
   <App />,
   (() => {
     const app = document.createElement('div');
     const dom = document.querySelector('.AppHeader-globalBar-end');
     const domF = document.querySelector('.AppHeader-search');
-    console.log(dom,domF)
+    console.error(dom,domF)
     dom.insertBefore(app,domF);
     return app;
   })(),

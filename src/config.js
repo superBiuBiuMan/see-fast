@@ -12,25 +12,25 @@ export const ICON_GET = {
 export const websiteNormal = [
   {
     name: "gitpod",
-    description: "1",
+    description: "Always ready-to-code.",
     url:"gitpod.io",
     icon: "",
   },
   {
     name: 'sourcegraph',
-    description: '2',
+    description: 'Easily browse and search for code on Github',
     url:"sourcegraph.com",
     icon: '',
   },
   {
     name: 'github.dev',
     url:'github.dev',
-    description: '3',
+    description: '',
     icon: '',
   },
   {
     name: 'github1s',
-    description: '这是一段用户描述信息，可自定义内容',
+    description: '',
     url:'github1s.com',
     icon: '',
   }

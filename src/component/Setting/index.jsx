@@ -4,6 +4,7 @@ import {Dialog,Select,Tooltip} from "tdesign-react";
 import {websiteNormal} from "../../config.js";
 const { Option } = Select;
 import {GM_setValue,GM_getValue} from "$";
+import set from "../../assets/set.svg";
 const { VITE_DEFAULT_OPEN } =  import.meta.env;
 /**
  * 设置页面
@@ -44,7 +45,11 @@ const Index = ({ setIcon,setUrl }) => {
   return (
     <>
       <div className={SettingStyle.setting} onClick={() => setVisible(true)}>
-
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+             className="octicon octicon-triangle-down">
+          <path
+            d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+        </svg>
       </div>
       {/*对话框*/}
       <Dialog
