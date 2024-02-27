@@ -16,6 +16,7 @@ export default defineConfig({
         namespace: 'dreamlove/see-fast',
         supportURL:'https://github.com/superBiuBiuMan/see-fast',
         match: ['https://github.com/*'],
+
         '@run-at':'document-end'
 
       },
