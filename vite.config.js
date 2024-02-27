@@ -17,6 +17,7 @@ export default defineConfig({
         supportURL:'https://github.com/superBiuBiuMan/see-fast',
         match: ['https://github.com/*'],
         '@run-at':'document-end'
+
       },
       build: {
         externalGlobals:[
